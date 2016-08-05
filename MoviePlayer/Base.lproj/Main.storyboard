@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MoviePlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igi-P0-wOa">
+                                <rect key="frame" x="285" y="332" width="30" height="30"/>
+                                <state key="normal" title="play"/>
+                                <connections>
+                                    <action selector="btnPlayAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VDe-Hs-zRL"/>
+                                    <segue destination="jTS-qc-uf0" kind="show" id="1SK-zv-jcJ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IuH-3H-7Co">
+                                <rect key="frame" x="0.0" y="20" width="600" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IuH-3H-7Co" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RhA-I1-kUg"/>
+                            <constraint firstAttribute="trailing" secondItem="IuH-3H-7Co" secondAttribute="trailing" id="YEu-Y8-Ejn"/>
+                            <constraint firstItem="IuH-3H-7Co" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Yl6-m9-AsC"/>
+                            <constraint firstItem="IuH-3H-7Co" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="mYg-EZ-mr0"/>
+                            <constraint firstItem="Igi-P0-wOa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tTK-zh-n8l"/>
+                            <constraint firstItem="Igi-P0-wOa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="47" id="w8Y-uD-Vk1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="movieView" destination="IuH-3H-7Co" id="gqh-z3-Kgz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2h9-g1-GEs">
+            <objects>
+                <viewController id="jTS-qc-uf0" customClass="AVViewController" customModule="MoviePlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h20-7g-E1A"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZtS-qC-9Cv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ahr-1v-JmY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4hV-aj-7lO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="953" y="429"/>
+        </scene>
+    </scenes>
+</document>

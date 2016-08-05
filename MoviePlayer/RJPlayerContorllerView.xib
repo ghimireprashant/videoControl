@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RJPlayerContorllerView" customModule="MoviePlayer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETQ-y8-JCS">
+                    <rect key="frame" x="277" y="285" width="46" height="30"/>
+                    <state key="normal" title="Replay"/>
+                    <connections>
+                        <action selector="didClickReplayButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="QgB-97-HMD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCE-xb-lbk">
+                    <rect key="frame" x="562" y="285" width="30" height="30"/>
+                    <state key="normal" title="&gt;  &gt;"/>
+                    <connections>
+                        <action selector="didClickNextButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Z2S-Se-5Ez"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEr-cA-B3J">
+                    <rect key="frame" x="8" y="285" width="30" height="30"/>
+                    <state key="normal" title="&lt;  &lt;"/>
+                    <connections>
+                        <action selector="didClickPreviousButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="8Vk-HR-Iek"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.42776076858108109" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ETQ-y8-JCS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0He-cL-C1r"/>
+                <constraint firstItem="KEr-cA-B3J" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4RN-ep-CVY"/>
+                <constraint firstAttribute="trailing" secondItem="eCE-xb-lbk" secondAttribute="trailing" constant="8" id="Bir-I3-AUO"/>
+                <constraint firstItem="KEr-cA-B3J" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="J1W-32-ho4"/>
+                <constraint firstItem="ETQ-y8-JCS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="JcQ-Nj-od8"/>
+                <constraint firstItem="eCE-xb-lbk" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zTL-LJ-jWv"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
